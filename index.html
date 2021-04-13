@@ -3,10 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <title>English placement test</title>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1>Placement Test</h1>
+    <div id="typed-strings">
+      <p>
+        Are you ready to <strong> TEST your english</strong> language skills ?
+      </p>
+      <p>We made it with ♥</p>
+      <p>relax and concentrate</p>
+      <p>so now....</p>
+    </div>
+    <span id="typed"></span>
     <h2>Choose the correct answer.</h2>
     <div id="qgen"></div>
     <div class="center">
@@ -20,5 +29,14 @@
     <h2 hidden id="t_cat">Your category:</h2>
     <p id="category"></p>
     <script type="text/javascript" src="./index.js"></script>
+
+    <script>
+      let typed = new Typed("#typed", {
+        stringsElement: "#typed-strings",
+        backSpeed: 40,
+        typeSpeed: 40,
+        loop: true,
+      });
+    </script>
   </body>
 </html>
