@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>English placement test</title>
-    <!-- <link rel="stylesheet" href="./style.css" /> -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <link rel="stylesheet" href="./body.css" />
   </head>
@@ -13,30 +14,28 @@
         <span>
           Are you ready to <strong> TEST your english</strong> language skills ?
         </span>
-        <span>We made it with ♥</span>
+        <span>We made it with ♥</span
         <span>relax and concentrate</span>
         <span>so now....</span>
       </div>
-      <h1 class="typed-strings">
-        <span id="typed"></span>
-      </h1>
-
-      <h2>Choose the correct answer.</h2>
-      <div id="qgen"></div>
+      <h1><span id="typed"></span></h1>
       <div class="center">
-        <button type="button" id="validate">
-          I just finished and I want to get my score
+        <!-- <p id="phraseAccroche">
+          Do you want to know your level of English? <br />
+          Press Start!
+        </p> -->
+
+        <button
+          type="button"
+          id="startBtn"
+          onclick="window.location = 'form.html'"
+        >
+          Start
         </button>
       </div>
-
-      <h2 hidden id="t_score">Your score:</h2>
-      <p id="answer"></p>
-      <h2 hidden id="t_cat">Your category:</h2>
-      <p id="category"></p>
     </main>
-    <script type="text/javascript" src="./index.js"></script>
-    <script type="text/javascript" src="./timer.js"></script>
-    <script defer>
+    <script type="text/javascript" src="./start.js"></script>
+    <script>
       let typed = new Typed("#typed", {
         stringsElement: "#typed-strings",
         backSpeed: 40,
