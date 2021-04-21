@@ -1,180 +1,162 @@
 @font-face {
-     font-family: 'titleFont';
-     src: url('bodyAssets/fonts/AbrilFatface-Regular.ttf');
+  font-family: "titleFont";
+  src: url("bodyAssets/fonts/AbrilFatface-Regular.ttf");
 }
 @font-face {
-     font-family: 'textFontRegular';
-     src: url('bodyAssets/fonts/CormorantGaramond-Regular.ttf');
+  font-family: "textFontRegular";
+  src: url("bodyAssets/fonts/CormorantGaramond-Regular.ttf");
 }
 @font-face {
-     font-family: 'textFontBold';
-     src: url('bodyAssets/fonts/CormorantGaramond-Bold.ttf');
+  font-family: "textFontBold";
+  src: url("bodyAssets/fonts/CormorantGaramond-Bold.ttf");
 }
-html 
-{
-     font-family: 'textFontRegular';
-     font-weight: lighter;
-     background-color: transparent;
-     background-image: url('bodyAssets/img/Photo_by_Domenico_Loia_on_Unsplash.jpg');
-     
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-     height: 100%;
-	width: auto;
-}
-main
-{
-     background-color: rgba(255, 255, 255, 0.836);
-     border-radius: 6px;
+html {
+  font-family: "textFontRegular";
+  font-weight: lighter;
+  background-color: transparent;
+  background-image: url("bodyAssets/img/Photo_by_Domenico_Loia_on_Unsplash.jpg");
 
-     margin: 160px 15% 80px 15%;
-     padding-left: 40px;
-     padding-right: 40px;
-     padding-bottom: 40px;;
-     width: 70%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: auto;
 }
-main h1
-{
-     font-family: 'titleFont';
-     text-align: center;
-     color: rgb(59, 39, 71);
-     font-size: 60px;
-     letter-spacing: 6px;
-}
-main h2
-{
-     font-family: 'titleFont';
-     font-weight: lighter;
-     text-align: left;
-     color: rgb(59, 39, 71);
-     font-size: 30px;
-     letter-spacing: 1px;
-}
-main h3, main h4
-{
-     margin: 0px;
-}
-main form p
-{
-     font-family: 'textFontBold';
-     font-size: 22px;
-     letter-spacing: 1px;
-     color: rgb(29, 26, 37);
-}
-main #phraseAccroche
-{
-     text-align: justify;
-     text-align-last: center ;
-     font-family: 'textFontBold';
-     font-size: 20px;
-     letter-spacing: 2px; ;
-}
-main #answer, main #category
-{
-     font-family: 'textFontRegular';
-     font-size: 22px;
-     letter-spacing: 1px;
-     color: rgb(29, 26, 37);
-}
-main form label
-{
-     font-weight:lighter;
-     font-size: 16px;
-     letter-spacing: 1px;
-     color: rgb(77, 56, 88);
-}
-main button
-{
-     font-family: 'textFontBold';
-     font-size: 16px;
-     letter-spacing: 1px;
-     background-color: rgb(71, 44, 85);
-     outline: none;
-     border: none;
-     border-radius: 6px;
-     color: white;
-     margin: 10px;
-     padding: 10px;
+main {
+  background-color: rgba(255, 255, 255, 0.836);
+  border-radius: 6px;
 
-     display: block;
-     margin : auto;
+  margin: 160px 15% 80px 15%;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  width: 70%;
 }
-main button:hover
-{
-     transition: .5s;
-     transform: scale(1.1);
-     
-     background-color: rgb(71, 34, 90);
+main h1 {
+  font-family: "titleFont";
+  text-align: center;
+  color: rgb(59, 39, 71);
+  font-size: 60px;
+  letter-spacing: 6px;
 }
-main button:active
-{
-     transition: .2s;
-     transform: scale(.9);
-     
-     background-color: rgb(125, 94, 141);
+main h2 {
+  font-family: "titleFont";
+  font-weight: lighter;
+  text-align: left;
+  color: rgb(59, 39, 71);
+  font-size: 30px;
+  letter-spacing: 1px;
 }
-main #allDescriptifContainer
-{
-     display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
-     justify-content: space-around;
+main h3,
+main h4 {
+  margin: 0px;
 }
-main #allDescriptifContainer div
-{
-     border-radius: 6px;
-     box-shadow: 0 0 10px grey ;
-     background-color: white;
-     padding: 10px;
-     min-width: calc(50% - 40px);
-     max-width: calc(50% - 40px);
-     margin-bottom: 20px;
+main form p {
+  font-family: "textFontBold";
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: rgb(29, 26, 37);
+}
+main #phraseAccroche {
+  text-align: justify;
+  text-align-last: center;
+  font-family: "textFontBold";
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+main #answer,
+main #category {
+  font-family: "textFontRegular";
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: rgb(29, 26, 37);
+}
+main form label {
+  font-weight: lighter;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: rgb(77, 56, 88);
+}
+main button {
+  font-family: "textFontBold";
+  font-size: 16px;
+  letter-spacing: 1px;
+  background-color: rgb(71, 44, 85);
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+
+  display: block;
+  margin: auto;
+}
+main button:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+
+  background-color: rgb(71, 34, 90);
+}
+main button:active {
+  transition: 0.2s;
+  transform: scale(0.9);
+
+  background-color: rgb(125, 94, 141);
+}
+main #allDescriptifContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+main #allDescriptifContainer div {
+  border-radius: 6px;
+  box-shadow: 0 0 10px grey;
+  background-color: white;
+  padding: 10px;
+  min-width: calc(50% - 40px);
+  max-width: calc(50% - 40px);
+  margin-bottom: 20px;
 }
 
-#timer
-{
-     opacity: 0;
-     animation : 1.5s bounceTimer .8s ease-in-out forwards;
+#timer {
+  opacity: 0;
+  animation: 1.5s bounceTimer 0.8s ease-in-out forwards;
 
-     position: fixed;
-     top: 20px;
-     right: 20px;
-     font-family: 'titleFont';
-     text-align: center;
-     background-color: rgb(59, 39, 71);
-     
-     box-shadow: 0 0 10px rgb(255, 255, 255) ;
-     color: white;
-     border-radius: 6px;
-     font-size: 40px;
-     letter-spacing: 4px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-family: "titleFont";
+  text-align: center;
+  background-color: rgb(59, 39, 71);
 
-     width: 200px;;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+  color: white;
+  border-radius: 6px;
+  font-size: 40px;
+  letter-spacing: 4px;
+
+  width: 200px;
 }
 @keyframes bounceTimer {
-     0%
-     {
-          opacity: 0;
-          transform: scale(0);
-     }
-     20%
-     {
-          transform: scale(1.2);
-     }
-     50%
-     {
-          opacity: 0.5;
-          transform: scale(0.8);
-     }
-     90%
-     {
-          transform: scale(1.1);
-     }
-     100%
-     {
-          opacity: 1;
-          transform: scale(1);
-     }
-   }
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  20% {
+    transform: scale(1.2);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(0.8);
+  }
+  90% {
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
