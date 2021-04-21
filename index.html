@@ -4,11 +4,23 @@
     <meta charset="utf-8" />
     <title>English placement test</title>
     <!-- <link rel="stylesheet" href="./style.css" /> -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <link rel="stylesheet" href="./body.css" />
   </head>
   <body>
     <main>
-      <h1>Placement Test</h1>
+      <div id="typed-strings">
+        <span>
+          Are you ready to <strong> TEST your english</strong> language skills ?
+        </span>
+        <span>We made it with ♥</span>
+        <span>relax and concentrate</span>
+        <span>so now....</span>
+      </div>
+      <h1 class="typed-strings">
+        <span id="typed"></span>
+      </h1>
+
       <h2>Choose the correct answer.</h2>
       <div id="qgen"></div>
       <div class="center">
@@ -24,5 +36,13 @@
     </main>
     <script type="text/javascript" src="./index.js"></script>
     <script type="text/javascript" src="./timer.js"></script>
+    <script defer>
+      let typed = new Typed("#typed", {
+        stringsElement: "#typed-strings",
+        backSpeed: 40,
+        typeSpeed: 40,
+        loop: true,
+      });
+    </script>
   </body>
 </html>

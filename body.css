@@ -24,6 +24,7 @@ html {
   width: auto;
 }
 main {
+  position: relative;
   background-color: rgba(255, 255, 255, 0.836);
   border-radius: 6px;
 
@@ -32,6 +33,10 @@ main {
   padding-right: 40px;
   padding-bottom: 40px;
   width: 70%;
+  min-height: 450px;
+}
+.typed-strings {
+  height: 240px;
 }
 main h1 {
   font-family: "titleFont";
@@ -104,6 +109,18 @@ main button:active {
   transform: scale(0.9);
 
   background-color: rgb(125, 94, 141);
+}
+#startBtn {
+  position: absolute;
+  transition: 0.8s;
+  width: 100px;
+  bottom: 0;
+  left: calc(50% - 50px);
+  margin-bottom: 150px;
+}
+#startBtn:hover {
+  transform: scale(2);
+  transform-origin: center;
 }
 main #allDescriptifContainer {
   display: flex;
