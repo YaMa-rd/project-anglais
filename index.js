@@ -779,8 +779,7 @@ btn.addEventListener("click", function () {
   calculateResult();
 });
 
-function calculateResult()
-{
+function calculateResult() {
   score = 0;
   for (i = 0; i < question.length; i++) {
     ind = i + 1;
@@ -1637,12 +1636,10 @@ btn.addEventListener("click", function () {
 });
 
 //FONCTION AJOUTE
-function removeForm()
-{
+function removeForm() {
   let questions = document.querySelectorAll("form");
   let questionsArray = Array.from(questions);
-  for (let i=0; i<questionsArray.length; i++)
-  {
+  for (let i = 0; i < questionsArray.length; i++) {
     questionsArray[i].remove();
   }
   document.querySelector("#validate").remove();
@@ -1651,9 +1648,8 @@ function removeForm()
   showAllDescriptif();
 }
 
-function showAllDescriptif()
-{
-  console.log("test")
+function showAllDescriptif() {
+  console.log("test");
   let allDescriptifContainer = document.createElement("div");
   allDescriptifContainer.setAttribute("id", "allDescriptifContainer");
 
@@ -1661,19 +1657,24 @@ function showAllDescriptif()
   allDescriptifTitle.innerHTML = "All descriptions";
 
   let elementaryContainer = document.createElement("div");
-  elementaryContainer.innerHTML = "<h3>ELEMENTARY 0 - 13 </h3><br><h4>A1 TOEIC 120 pts</h4><br><p>Peut comprendre et utiliser des expressions quotidiennes ainsi que des énoncés très simples qui visent à satisfaire des besoins concrets. Peut se présenter ou présenter quelqu’un et poser à une personne des questions la concernant - par exemple, sur son lieu d’habitation, ses relations, ce qui lui appartient, etc. - et peut répondre au même type de questions. Peut communiquer de façon simple si l’interlocuteur parle lentement et distinctement et se montre coopératif.</p>";
-  
+  elementaryContainer.innerHTML =
+    "<h3>ELEMENTARY 0 - 13 </h3><br><h4>A1 TOEIC 120 pts</h4><br><p>Peut comprendre et utiliser des expressions quotidiennes ainsi que des énoncés très simples qui visent à satisfaire des besoins concrets. Peut se présenter ou présenter quelqu’un et poser à une personne des questions la concernant - par exemple, sur son lieu d’habitation, ses relations, ce qui lui appartient, etc. - et peut répondre au même type de questions. Peut communiquer de façon simple si l’interlocuteur parle lentement et distinctement et se montre coopératif.</p>";
+
   let preelementaryContainer = document.createElement("div");
-  preelementaryContainer.innerHTML = "<h3>PRE-INTERMEDIATE 13 - 41 </h3><br><h4>A2  TOEIC 225 pts</h4><br><p>Peut comprendre des phrases isolées et des expressions fréquemment utilisées en relation avec des domaines immédiats de priorité (par exemple, informations personnelles et familiales simples, achats, environnement proche, travail). Peut communiquer lors de tâches simples et habituelles ne demandant qu’un échange d’informations simple et direct sur des sujets familiers et habituels. Peut décrire avec des moyens simples sa formation, son environnement immédiat et évoquer des sujets qui correspondent à des besoins immédiats.</p>";
-  
+  preelementaryContainer.innerHTML =
+    "<h3>PRE-INTERMEDIATE 13 - 41 </h3><br><h4>A2  TOEIC 225 pts</h4><br><p>Peut comprendre des phrases isolées et des expressions fréquemment utilisées en relation avec des domaines immédiats de priorité (par exemple, informations personnelles et familiales simples, achats, environnement proche, travail). Peut communiquer lors de tâches simples et habituelles ne demandant qu’un échange d’informations simple et direct sur des sujets familiers et habituels. Peut décrire avec des moyens simples sa formation, son environnement immédiat et évoquer des sujets qui correspondent à des besoins immédiats.</p>";
+
   let intermediateContainer = document.createElement("div");
-  intermediateContainer.innerHTML = "<h3>INTERMEDIATE 41 - 61</h3> <br><h4>B1 TOEIC 550 pts</h4><br><p><br>Peut comprendre les points essentiels quand un langage clair et standard est utilisé et s’il s’agit de choses familières dans le travail, à l’école, dans les loisirs, etc. Peut se débrouiller dans la plupart des situations rencontrées en voyage dans une région où la langue cible est parlée. Peut produire un discours simple et cohérent sur des sujets familiers et dans ses domaines d’intérêt. Peut raconter unévénement, une expérience ou un rêve, décrire un espoir ou un but et exposer brièvement des raisons ou explications pour un projet ou une idée.</p>";
-  
+  intermediateContainer.innerHTML =
+    "<h3>INTERMEDIATE 41 - 61</h3> <br><h4>B1 TOEIC 550 pts</h4><br><p><br>Peut comprendre les points essentiels quand un langage clair et standard est utilisé et s’il s’agit de choses familières dans le travail, à l’école, dans les loisirs, etc. Peut se débrouiller dans la plupart des situations rencontrées en voyage dans une région où la langue cible est parlée. Peut produire un discours simple et cohérent sur des sujets familiers et dans ses domaines d’intérêt. Peut raconter unévénement, une expérience ou un rêve, décrire un espoir ou un but et exposer brièvement des raisons ou explications pour un projet ou une idée.</p>";
+
   let upperIntermediateContainer = document.createElement("div");
-  upperIntermediateContainer.innerHTML = "<h3>UPPER-INTERMEDIATE 61 - 81</h3><br><h4>B2 TOEIC 785 pts</h4><br><p>Peut comprendre le contenu essentiel de sujets concrets ou abstraits dans un texte complexe, y compris une discussion technique dans sa spécialité. Peut communiquer avec un degré de spontanéité et d’aisance tel qu’une conversation avec un locuteur natif ne comportant pas de tension ni pour l’un ni pour l’autre. Peut s’exprimer de façon claire et détaillée sur une grande gamme de sujets, émettre un avis sur un sujet d’actualité et exposer les avantages et les inconvénients de différentes possibilités.</p>";
-  
+  upperIntermediateContainer.innerHTML =
+    "<h3>UPPER-INTERMEDIATE 61 - 81</h3><br><h4>B2 TOEIC 785 pts</h4><br><p>Peut comprendre le contenu essentiel de sujets concrets ou abstraits dans un texte complexe, y compris une discussion technique dans sa spécialité. Peut communiquer avec un degré de spontanéité et d’aisance tel qu’une conversation avec un locuteur natif ne comportant pas de tension ni pour l’un ni pour l’autre. Peut s’exprimer de façon claire et détaillée sur une grande gamme de sujets, émettre un avis sur un sujet d’actualité et exposer les avantages et les inconvénients de différentes possibilités.</p>";
+
   let advancedContainer = document.createElement("div");
-  advancedContainer.innerHTML = "<h3>ADVANCED >81 </h3> <br> <h4>C1 TOEIC 945 pts</h4><br><p>Peut  comprendre  une  grande  gamme  de  textes  longs  et  exigeants,  ainsi  que  saisir  des  significations  implicites.  Peut  s’exprimer spontanément et couramment sans trop apparemment devoir chercher ses mots. Peut utiliser la langue de façon efficace et souple dans sa vie sociale, professionnelle ou académique. Peut s’exprimer sur des sujets complexes de façon claire et bien structurée et manifester son contrôle des outils d’organisation, d’articulation et de cohésion du discours.</p>";
+  advancedContainer.innerHTML =
+    "<h3>ADVANCED >81 </h3> <br> <h4>C1 TOEIC 945 pts</h4><br><p>Peut  comprendre  une  grande  gamme  de  textes  longs  et  exigeants,  ainsi  que  saisir  des  significations  implicites.  Peut  s’exprimer spontanément et couramment sans trop apparemment devoir chercher ses mots. Peut utiliser la langue de façon efficace et souple dans sa vie sociale, professionnelle ou académique. Peut s’exprimer sur des sujets complexes de façon claire et bien structurée et manifester son contrôle des outils d’organisation, d’articulation et de cohésion du discours.</p>";
 
   document.querySelector("main").appendChild(allDescriptifTitle);
   document.querySelector("main").appendChild(allDescriptifContainer);
@@ -1685,8 +1686,7 @@ function showAllDescriptif()
   allDescriptifContainer.appendChild(advancedContainer);
 
   let backButton = document.createElement("button");
-  backButton.setAttribute("onclick", "window.location = 'start.html'");
+  backButton.setAttribute("onclick", "window.location = 'index.html'");
   backButton.innerHTML = "Back";
   document.querySelector("main").appendChild(backButton);
-
 }
