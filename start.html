@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>English placement test</title>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="./body.css" />
+  </head>
+  <body>
+    <main>
+      <div id="typed-strings">
+        <span>
+          Are you ready to <strong> TEST your english</strong> language skills ?
+        </span>
+        <span>We made it with ♥</span
+        <span>relax and concentrate</span>
+        <span>so now....</span>
+      </div>
+      <h1><span id="typed"></span></h1>
+      <div class="center">
+        <!-- <p id="phraseAccroche">
+          Do you want to know your level of English? <br />
+          Press Start!
+        </p> -->
+
+        <button
+          type="button"
+          id="startBtn"
+          onclick="window.location = 'index.html'"
+        >
+          Start
+        </button>
+      </div>
+    </main>
+    <script type="text/javascript" src="./start.js"></script>
+    <script>
+      let typed = new Typed("#typed", {
+        stringsElement: "#typed-strings",
+        backSpeed: 40,
+        typeSpeed: 40,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
